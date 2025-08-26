@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FileUploadController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ToolController;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,6 @@ Route::get('/tools/expense-calculator', [ToolController::class, 'expenseCalculat
 Route::get('/tools/text-analyzer', [ToolController::class, 'textAnalyzer'])->name('tools.text-analyzer');
 Route::get('/tools/unit-converter', [ToolController::class, 'unitConverter'])->name('tools.unit-converter');
 Route::get('/tools/currency-converter', [ToolController::class, 'currencyConverter'])->name('tools.currency-converter');
+Route::get('/tools/qr-code-generator', [ToolController::class, 'qrCodeGenerator'])->name('tools.qr-code-generator');
+// Assuming you have Route::get('/', ...) or similar, add:
+Route::post('/upload', [FileUploadController::class, 'upload'])->name('upload');

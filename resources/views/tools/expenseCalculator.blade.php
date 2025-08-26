@@ -69,7 +69,6 @@
     </div>
 </div>
 
-@endsection
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const descriptionInput = document.getElementById('description');
@@ -163,3 +162,4 @@
         updateSummary();
     });
 </script>
+@endsection

@@ -14,6 +14,7 @@ class ToolController extends Controller
             ['name' => 'Text Analyzer', 'description' => 'Analyze text for word count and more.', 'url' => '/tools/text-analyzer', 'component' => 'textAnalyzer'],
             ['name' => 'Advanced Unit Converter', 'description' => 'Advanced unit converter for all types of units.', 'url' => '/tools/unit-converter', 'component' => 'unitConverter'],
             ['name' => 'Currency Converter', 'description' => 'Convert currencies with real-time exchange rates.', 'url' => '/tools/currency-converter', 'component' => 'currencyConverter'],
+            ['name' => 'QR Code Generator', 'description' => 'Generate QR codes from text or URLs.', 'url' => '/tools/qr-code-generator', 'component' => 'qrCodeGenerator'],
         ];
 
         return view('tools', compact('tools'));
@@ -36,5 +37,9 @@ class ToolController extends Controller
 
     public function currencyConverter(){
         return view("tools.currencyConverter");
+    }
+
+    public function qrCodeGenerator(){
+        return view("tools.qrCodeGenerator");
     }
 }

@@ -28,7 +28,6 @@
         </div>
     </div>
 </div>
-@endsection 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const fromCurrencySelect = document.getElementById('from-currency');
@@ -248,3 +247,4 @@
         convert();
     });
 </script>
+@endsection 
