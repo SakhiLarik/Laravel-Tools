@@ -19,3 +19,4 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/tools/calculator', [ToolController::class, 'calculator'])->name('tools.calculator');
 Route::get('/tools/text-analyzer', [ToolController::class, 'textAnalyzer'])->name('tools.text-analyzer');
+Route::get('/tools/unit-converter', [ToolController::class, 'unitConverter'])->name('tools.unit-converter');
