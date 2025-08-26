@@ -1,6 +1,8 @@
 @extends('layouts.app') <!-- Assuming you have a main layout -->
 
 @section('content')
+<div class="flex justify-center iems-center min-h-screen">
+    
 <div class="container mx-auto p-6">
     <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Scientific Calculator</h1>
     
@@ -28,8 +30,8 @@
             <button class="btn func" onclick="append('Math.PI')">π</button>
             <button class="btn func" onclick="append('Math.E')">e</button>
             <button class="btn op" onclick="append('^')">^</button>
-            <button class="btn op" onclick="append('%')">%</button>
             <button class="btn clear" onclick="clearDisplay()">C</button>
+            <button class="btn clear cut" onclick="remove()">&times;</button>
             
             <!-- Row 4: Numbers 7-9, /, ( -->
             <button class="btn num" onclick="append('7')">7</button>
@@ -56,9 +58,12 @@
             <button class="btn num" onclick="append('0')">0</button>
             <button class="btn num" onclick="append('.')">.</button>
             <button class="btn op" onclick="append('+')">+</button>
-            <button class="btn equal col-span-2" onclick="calculate()">=</button>
+            <button class="btn op" onclick="append('%')">%</button>
+            <button class="btn" onclick="calculate()">=</button>
         </div>
     </div>
+</div>
+
 </div>
 
 <script>
@@ -67,7 +72,9 @@
     function append(value) {
         display.value += value;
     }
-
+    function remove() {
+        display.value = display.value.slice(0, -1);
+    }
     function clearDisplay() {
         display.value = '';
     }
