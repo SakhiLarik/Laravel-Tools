@@ -10,6 +10,7 @@ class ToolController extends Controller
     {
         $tools = [
             ['name' => 'Scientific Calculator', 'description' => 'An advanced scientific calculator for quick math.', 'url' => '/tools/calculator', 'component' => 'calculator'],
+            ['name' => 'Expense Calculator', 'description' => 'Calculate and manage your expenses effectively.', 'url' => '/tools/expense-calculator', 'component' => 'expenseCalculator'],
             ['name' => 'Text Analyzer', 'description' => 'Analyze text for word count and more.', 'url' => '/tools/text-analyzer', 'component' => 'textAnalyzer'],
             ['name' => 'Advanced Unit Converter', 'description' => 'Advanced unit converter for all types of units.', 'url' => '/tools/unit-converter', 'component' => 'unitConverter'],
             ['name' => 'Currency Converter', 'description' => 'Convert currencies with real-time exchange rates.', 'url' => '/tools/currency-converter', 'component' => 'currencyConverter'],
@@ -20,6 +21,10 @@ class ToolController extends Controller
     public function calculator(){
         return view("tools.calculator");
     }
+
+    public function expenseCalculator(){
+        return view("tools.expenseCalculator");
+    }   
 
     public function textAnalyzer(){
         return view("tools.textAnalyzer");
