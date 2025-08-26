@@ -1,61 +1,134 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# My Tools Page
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This website is a collection of powerful, user-friendly tools built using Laravel and enhanced with modern JavaScript and Tailwind CSS. The primary purpose of this website is to provide practical utilities for everyday tasks, including text analysis, unit conversion, currency conversion, expense management, and QR code generation. Each tool is designed to be responsive, intuitive, and accessible, catering to a wide range of users from individuals to professionals.
 
-## About Laravel
+## Tools
+- Scientific Calculator _(Done)_
+- Expense Calculator _(Done)_
+- Text Analyzer _(Done)_
+- Advanced Unit Convertor _(Done)_
+- Currency Convertor _(Done)_
+- QR Code Generator _(Done)_
+- Age Calculator
+- Website Speed Checker
+- IP Address Finder
+- Backlinks Checker
+- Image to PDF
+- Word to PDF
+- PDF to Word
+- Time zone Convertor
+- Image to Text
+- BMI Calculator
+- Adsense Earning Calculator
+- Image Donwloader
+- Video Downloader
+- Image Size Compressor
+- Domain Age Checker
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Scientific Calculator
+- **Purpose**: Perform advanced mathematical and scientific calculations to assist with complex computations.
+- **Features**:
+  - Supports a wide range of operations including basic arithmetic (addition, subtraction, multiplication, division), trigonometric functions (sin, cos, tan), logarithms, exponents, and square roots.
+  - Interactive interface with real-time result updates as inputs are entered.
+  - Mobile-responsive design using Tailwind CSS, ensuring usability on various devices.
+  - Ideal for students, engineers, and professionals needing quick scientific computations.
 
-## Learning Laravel
+### Expense Calculator
+- **Purpose**: Calculate and manage expenses and income effectively to track financial health.
+- **Features**:
+  - Add, view, and delete transactions (income or expenses) with descriptions and amounts.
+  - Displays total income, total expenses, and balance with color-coded indicators (green for positive, red for negative).
+  - Persistent transaction history using localStorage, with a responsive table layout.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Text Analyzer
+- **Purpose**: Analyze text input to provide insights such as character count, word count, sentence count, and average word length.
+- **Features**:
+  - Real-time analysis as text is typed.
+  - Responsive design with a clean interface using Tailwind CSS.
+  - Ideal for writers, editors, and students to evaluate text content.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Advanced Unit Converter
+- **Purpose**: Convert between various units across categories like length, mass, temperature, area, volume, speed, time, pressure, and energy.
+- **Features**:
+  - Supports a wide range of units for each category (e.g., meters to miles, Celsius to Fahrenheit).
+  - Dynamic unit selection based on the chosen category.
+  - Mobile-responsive layout with real-time conversion results.
 
-## Laravel Sponsors
+### Currency Converter
+- **Purpose**: Convert amounts between all recognized non-digital currencies worldwide using approximate exchange rates.
+- **Features**:
+  - Includes official currencies (e.g., USD, EUR, JPY) with their ISO codes.
+  - Real-time conversion with a dropdown for selecting from and to currencies.
+  - Responsive design optimized for both desktop and mobile users.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### QR Code Generator
+- **Purpose**: Generate QR codes from user inputs, including text, URLs, and uploaded files.
+- **Features**:
+  - Supports three input types: text, URL/link, and file upload.
+  - File upload feature stores files on the server and generates a QR code for the download URL (up to MB limit).
+  - Includes a download option for the generated QR code and error handling for large or invalid inputs.
+  - Responsive design with a dynamic input interface.
 
-### Premium Partners
+## Installation and Setup
+**Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <project-directory>
+   ```
+**Install Dependencies**:
+- Ensure PHP, Composer, and Node.js are installed.
+- Run:
+```bash
+composer install
+npm install
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Configure Environment:
+- Copy `.env.example` to `bash.env` and update the database and application settings. 
+- Generate an application key:
+```bash
+php artisan key:generate
+```
+**Setup Storage**:
+
+- Link the storage directory for file uploads:
+```bash
+php artisan storage:link
+```
+- Ensure `storage` and `public/uploads` (if used) have proper permissions:
+```bash
+chmod -R storage
+chown -R $USER:www-data storage
+mkdir -p public/uploads
+chmod -R public/uploads
+chown -R $USER:www-data public/uploads
+```
+Run the Application:
+
+- Start the Laravel development server:
+```bash
+php artisan serve
+```
+Access the site at `http://localhost:`.
+
+## Usage
+
+- Navigate to the respective tool page from the website's main interface.
+- Input the required data (e.g., text, units, currency amounts, transactions, or files).
+- Use the generated results or download options as needed.
+- For file uploads in the QR Code Generator, ensure files are under MB for successful processing.
 
 ## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request with your changes. Ensure to follow the existing code style and include tests where applicable.
 
 ## License
+This project is licensed under the MIT License.
+## Contact
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+For questions or support, please open an issue on the repository or contact the maintainers.
+
+`Last Updated: :PM PKT, Tuesday, August `
