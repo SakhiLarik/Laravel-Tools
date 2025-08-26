@@ -6,6 +6,7 @@
     <title>@yield('title') - Tools & Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{asset("asset/computer.png")}}" />
+    <link rel="favicon" href="{{asset("asset/computer.png")}}" />
     <style>
 
     .btn {
