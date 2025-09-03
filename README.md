@@ -10,8 +10,8 @@ This website is a collection of powerful, user-friendly tools built using Larave
 - Currency Convertor _(Done)_
 - QR Code Generator _(Done)_
 - Age Calculator _(DONE)_
-- Website Speed Checker
-- IP Address Finder
+- Website Speed Checker _(DONE)_
+- IP Address Finder _(DONE)_
 - Backlinks Checker
 - Image to PDF
 - Word to PDF

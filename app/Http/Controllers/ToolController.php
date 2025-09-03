@@ -17,6 +17,7 @@ class ToolController extends Controller
             ['name' => 'QR Code Generator', 'description' => 'Generate QR codes from text or URLs.', 'url' => '/tools/qr-code-generator', 'component' => 'qrCodeGenerator'],
             ['name' => 'Age Calculator', 'description' => 'Calculate age based on birthdate.', 'url' => '/tools/age-calculator', 'component' => 'ageCalculator'],
             ['name' => 'Website Speed Checker', 'description' => 'Check the speed of your website.', 'url' => '/tools/website-speed-checker', 'component' => 'websiteSpeedChecker'],
+            ['name' => 'IP Address Finder', 'description' => 'Find details about an IP address.', 'url' => '/tools/ip-address-finder', 'component' => 'ipAddressFinder'],
         ];
 
         return view('tools', compact('tools'));
@@ -51,6 +52,9 @@ class ToolController extends Controller
 
     public function websiteSpeedChecker(){
         return view("tools.websiteSpeedChecker");
-    
+    }
+
+    public function ipAddressFinder(){
+        return view("tools.ipAddressFinder");
     }
 }
