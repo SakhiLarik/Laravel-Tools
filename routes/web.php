@@ -24,5 +24,6 @@ Route::get('/tools/text-analyzer', [ToolController::class, 'textAnalyzer'])->nam
 Route::get('/tools/unit-converter', [ToolController::class, 'unitConverter'])->name('tools.unit-converter');
 Route::get('/tools/currency-converter', [ToolController::class, 'currencyConverter'])->name('tools.currency-converter');
 Route::get('/tools/qr-code-generator', [ToolController::class, 'qrCodeGenerator'])->name('tools.qr-code-generator');
+Route::get('/tools/age-calculator', [ToolController::class, 'ageCalculator'])->name('tools.age-calculator');
 // Assuming you have Route::get('/', ...) or similar, add:
 Route::post('/upload', [FileUploadController::class, 'upload'])->name('upload');

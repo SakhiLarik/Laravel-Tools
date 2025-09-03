@@ -15,6 +15,7 @@ class ToolController extends Controller
             ['name' => 'Advanced Unit Converter', 'description' => 'Advanced unit converter for all types of units.', 'url' => '/tools/unit-converter', 'component' => 'unitConverter'],
             ['name' => 'Currency Converter', 'description' => 'Convert currencies with real-time exchange rates.', 'url' => '/tools/currency-converter', 'component' => 'currencyConverter'],
             ['name' => 'QR Code Generator', 'description' => 'Generate QR codes from text or URLs.', 'url' => '/tools/qr-code-generator', 'component' => 'qrCodeGenerator'],
+            ['name' => 'Age Calculator', 'description' => 'Calculate age based on birthdate.', 'url' => '/tools/age-calculator', 'component' => 'ageCalculator'],
         ];
 
         return view('tools', compact('tools'));
@@ -41,5 +42,9 @@ class ToolController extends Controller
 
     public function qrCodeGenerator(){
         return view("tools.qrCodeGenerator");
+    }
+
+    public function ageCalculator(){
+        return view("tools.ageCalculator");
     }
 }
