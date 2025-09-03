@@ -27,6 +27,7 @@ Route::get('/tools/qr-code-generator', [ToolController::class, 'qrCodeGenerator'
 Route::get('/tools/age-calculator', [ToolController::class, 'ageCalculator'])->name('tools.age-calculator');
 Route::get('/tools/website-speed-checker', [ToolController::class, 'websiteSpeedChecker'])->name('tools.website-speed-checker');
 Route::get('/tools/ip-address-finder', [ToolController::class, 'ipAddressFinder'])->name('tools.ip-address-finder');
+Route::get('/tools/time-zone-converter', [ToolController::class, 'timeZoneConverter'])->name('tools.time-zone-converter');
 
 
 // Assuming you have Route::get('/', ...) or similar, add:
