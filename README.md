@@ -9,7 +9,7 @@ This website is a collection of powerful, user-friendly tools built using Larave
 - Advanced Unit Convertor _(Done)_
 - Currency Convertor _(Done)_
 - QR Code Generator _(Done)_
-- Age Calculator
+- Age Calculator _(DONE)_
 - Website Speed Checker
 - IP Address Finder
 - Backlinks Checker

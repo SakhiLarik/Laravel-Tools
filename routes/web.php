@@ -25,5 +25,10 @@ Route::get('/tools/unit-converter', [ToolController::class, 'unitConverter'])->n
 Route::get('/tools/currency-converter', [ToolController::class, 'currencyConverter'])->name('tools.currency-converter');
 Route::get('/tools/qr-code-generator', [ToolController::class, 'qrCodeGenerator'])->name('tools.qr-code-generator');
 Route::get('/tools/age-calculator', [ToolController::class, 'ageCalculator'])->name('tools.age-calculator');
+Route::get('/tools/website-speed-checker', [ToolController::class, 'websiteSpeedChecker'])->name('tools.website-speed-checker');
+// routes/web.php (add this route)
+// Analyzer
+Route::post('/analyze-speed', [ToolController::class, 'analyze'])->name('analyze.speed');
+
 // Assuming you have Route::get('/', ...) or similar, add:
 Route::post('/upload', [FileUploadController::class, 'upload'])->name('upload');
