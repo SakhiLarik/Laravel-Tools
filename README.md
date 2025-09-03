@@ -19,7 +19,7 @@ This website is a collection of powerful, user-friendly tools built using Larave
 - Time zone Convertor _(Done)_
 - Image to Text
 - BMI Calculator _(DONE)_
-- Adsense Earning Calculator
+- Adsense Earning Calculator _(DONE)_
 - Image Donwloader
 - Video Downloader
 - Image Size Compressor
