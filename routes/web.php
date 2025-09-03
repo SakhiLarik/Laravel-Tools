@@ -29,6 +29,8 @@ Route::get('/tools/website-speed-checker', [ToolController::class, 'websiteSpeed
 Route::get('/tools/ip-address-finder', [ToolController::class, 'ipAddressFinder'])->name('tools.ip-address-finder');
 Route::get('/tools/time-zone-converter', [ToolController::class, 'timeZoneConverter'])->name('tools.time-zone-converter');
 Route::get('/tools/bmi-calculator', [ToolController::class, 'bmiCalculator'])->name('tools.bmi-calculator');
+Route::get('/tools/adsense-earning-calculator', [ToolController::class, 'adsenseEarningCalculator'])->name('tools.adsense-earning-calculator');
+
 
 
 
