@@ -28,6 +28,8 @@ Route::get('/tools/age-calculator', [ToolController::class, 'ageCalculator'])->n
 Route::get('/tools/website-speed-checker', [ToolController::class, 'websiteSpeedChecker'])->name('tools.website-speed-checker');
 Route::get('/tools/ip-address-finder', [ToolController::class, 'ipAddressFinder'])->name('tools.ip-address-finder');
 Route::get('/tools/time-zone-converter', [ToolController::class, 'timeZoneConverter'])->name('tools.time-zone-converter');
+Route::get('/tools/bmi-calculator', [ToolController::class, 'bmiCalculator'])->name('tools.bmi-calculator');
+
 
 
 // Assuming you have Route::get('/', ...) or similar, add:

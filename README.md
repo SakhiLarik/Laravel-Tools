@@ -18,7 +18,7 @@ This website is a collection of powerful, user-friendly tools built using Larave
 - PDF to Word
 - Time zone Convertor _(Done)_
 - Image to Text
-- BMI Calculator
+- BMI Calculator _(DONE)_
 - Adsense Earning Calculator
 - Image Donwloader
 - Video Downloader

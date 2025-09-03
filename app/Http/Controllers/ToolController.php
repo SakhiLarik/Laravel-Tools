@@ -19,6 +19,7 @@ class ToolController extends Controller
             ['name' => 'Website Speed Checker', 'description' => 'Check the speed of your website.', 'url' => '/tools/website-speed-checker', 'component' => 'websiteSpeedChecker'],
             ['name' => 'IP Address Finder', 'description' => 'Find details about an IP address.', 'url' => '/tools/ip-address-finder', 'component' => 'ipAddressFinder'],
             ['name' => 'Time Zone Converter', 'description' => 'Convert time between different time zones.', 'url' => '/tools/time-zone-converter', 'component' => 'timeZoneConverter'],
+            ['name' => 'BMI Calculator', 'description' => 'Calculate Body Mass Index (BMI) based on weight and height.', 'url' => '/tools/bmi-calculator', 'component' => 'bmiCalculator'],
         ];
 
         return view('tools', compact('tools'));
@@ -61,5 +62,9 @@ class ToolController extends Controller
 
     public function timeZoneConverter(){
         return view("tools.timeZoneConverter");
+    }
+
+    public function bmiCalculator(){
+        return view("tools.bmiCalculator");
     }
 }
