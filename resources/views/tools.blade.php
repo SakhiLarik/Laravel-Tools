@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tools')
+@section('title', 'Tools - Free Online Tools Hub | MyToolsHub.online')
 
 @section('content')
     <div class="p-6">

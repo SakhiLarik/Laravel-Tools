@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Free Online Tools Hub | MyToolsHub.online')
 
 @section('content')
 <div class="text-center py-12">
