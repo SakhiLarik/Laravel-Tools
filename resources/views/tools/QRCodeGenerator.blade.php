@@ -1,5 +1,3 @@
-// resources/views/qr_code_generator.blade.php (updated)
-
 @extends('layouts.app')
 
 @section('content')
